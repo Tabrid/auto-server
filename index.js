@@ -40,7 +40,6 @@ app.post('/post-to-google-sheet', async (req, res) => {
 	  res.status(500).send('Internal server error');
 	}
   });
-
 app.post('/post-to-google-sheet-contact', async (req, res) => {
 	try {
 	  const response = await fetch('https://script.google.com/macros/s/AKfycbyhIia2bOEjrPVUk2oN3snIbJuZwLrlqsn6QpjqP7fJT_G0wO_eFkn3nntMS3hTehSMeQ/exec', {
